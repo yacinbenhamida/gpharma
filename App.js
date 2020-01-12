@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
-
+import { StyleSheet, Text, View,StatusBar } from 'react-native';
+import  Login  from './src/pages/Login'
 export default class App extends Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<Text style={styles.instructions}>Hello World!</Text>
+			<StatusBar backgroundColor="#1c313a" barStyle="light-content" />
+				<Login />
 			</View>
 		);
 	}
@@ -13,14 +14,11 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
 	container: {
-		flex: 1,
-		justifyContent: 'center',
-		alignItems: 'center',
-		backgroundColor: '#F5FCFF'
-	},
-	instructions: {
-		textAlign: 'center',
-		color: '#333333',
-		marginBottom: 5
+		backgroundColor : "#455a64",
+		flex : 1,
+		alignItems : "center",
+		justifyContent : "center",
+		fontFamily : "Roboto"
 	}
+	
 });
